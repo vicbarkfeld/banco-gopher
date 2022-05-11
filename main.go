@@ -21,12 +21,12 @@ func (c *ContaCorrente) Sacar(valorDoSaque float64) string {
 
 func main() {
 	contaDaCristina := ContaCorrente{}
-	contaDaCristina.titular = "Silvia"
+	contaDaCristina.titular = "Cristina"
 	contaDaCristina.saldo = 500
 
 	fmt.Println(contaDaCristina.saldo)
 
-	fmt.Println(contaDaCristina.Sacar(400))
+	fmt.Println(contaDaCristina.Sacar(-100))
 	fmt.Println(contaDaCristina.saldo)
 
 }
