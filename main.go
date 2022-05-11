@@ -26,7 +26,7 @@ func main() {
 
 	fmt.Println(contaDaCristina.saldo)
 
-	fmt.Println(contaDaCristina.Sacar(-100))
+	fmt.Println(contaDaCristina.Sacar(400))
 	fmt.Println(contaDaCristina.saldo)
 
 }
