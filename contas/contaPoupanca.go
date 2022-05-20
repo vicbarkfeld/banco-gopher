@@ -27,7 +27,7 @@ func (c ContaPoupanca) Depositar(valorDoDeposito float64) (string, float64) {
 	}
 }
 
-func (c ContaPoupanca) Transferir(valorDaTransferencia float64, contaDestino ContaPoupanca) bool {
+func (c ContaPoupanca) Transferir(valorDaTransferencia float64, contaDestino *ContaPoupanca) bool {
 	if valorDaTransferencia < c.saldo && valorDaTransferencia > 0 {
 		c.saldo -= valorDaTransferencia
 		contaDestino.Depositar(valorDaTransferencia)
