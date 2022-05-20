@@ -6,8 +6,7 @@ import (
 )
 
 func main() {
-	contaExemplo := contas.ContaCorrente{}
-	contaExemplo.Depositar(100)
+	contaDoDenis := contas.ContaPoupanca{}
 
-	fmt.Println(contaExemplo.ObterSaldo())
+	fmt.Println(contaDoDenis)
 }
